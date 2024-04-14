@@ -10,6 +10,11 @@
     width: 40%;
     aspect-ratio: 1/1;
 }
+@media (max-width: 767px) {
+    .custom-card {
+        width: 100%;
+    }
+}
 
 .submit-btn {
     width: 100%;
