@@ -1,0 +1,64 @@
+.error-icon {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-card {
+    width: 40%;
+    aspect-ratio: 1/1;
+}
+
+.submit-btn {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.icon {
+    cursor: pointer;
+    position: relative;
+}
+
+.icon[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0.9;
+    font-size: 14px;
+}
+
+.fa-exclamation {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.fa-exclamation.visible {
+    display: block;
+}
+
+.input-container {
+    display: flex;
+}
+
+.fa-exclamation {
+    margin-left: 20px;
+}
